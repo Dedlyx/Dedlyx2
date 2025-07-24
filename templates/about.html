@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center mb-5">
+    <div class="col-lg-8 text-center">
+        <h1 class="display-4 fw-bold mb-4 animate-on-scroll">О проекте Weather Delyks</h1>
+        <p class="lead animate-on-scroll">Премиальный сервис прогноза погоды для самых требовательных пользователей</p>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="card p-4 mb-5 animate-on-scroll">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="О нас" 
+                         class="img-fluid rounded-3">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">Наша миссия</h2>
+                    <p>Мы создали Weather Delyks, чтобы предоставить самый точный, красивый и удобный прогноз погоды для любой точки мира.</p>
+                    <p>Наша команда метеорологов и разработчиков работает 24/7, чтобы вы всегда были в курсе изменений погоды.</p>
+                    <div class="mt-4">
+                        <a href="/weather" class="btn btn-deluxe">
+                            <i class="fas fa-cloud-sun me-2"></i>Попробовать сейчас
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center mt-5 mb-5">
+    <div class="col-lg-10">
+        <h2 class="text-center mb-5 animate-on-scroll">Наши преимущества</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4 animate-on-scroll">
+                <div class="card h-100 text-center p-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Погода по всему миру</h3>
+                    <p>Доступ к прогнозу для более чем 200,000 городов по всей планете</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 animate-on-scroll">
+                <div class="card h-100 text-center p-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Удобный интерфейс</h3>
+                    <p>Современный дизайн, адаптированный под все устройства</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 animate-on-scroll">
+                <div class="card h-100 text-center p-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Мгновенное обновление</h3>
+                    <p>Данные обновляются каждые 10 минут для максимальной точности</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

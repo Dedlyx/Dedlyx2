@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "instance",
+			"path": "../1 проек/instance"
+		},
+		{
+			"name": "instance",
+			"path": "../instance"
+		},
+		{
+			"name": "templates",
+			"path": "."
+		}
+	]
+}
