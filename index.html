@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8 text-center">
+        <h1 class="display-4 mb-4">Добро пожаловать в Delyks!</h1>
+        <p class="lead mb-5">Самый красивый и точный прогноз погоды для любого города мира</p>
+        
+        {% if not current_user.is_authenticated %}
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg px-4 me-md-2">
+                <i class="fas fa-user-plus me-2"></i>Регистрация
+            </a>
+            <a href="{{ url_for('login') }}" class="btn btn-outline-light btn-lg px-4">
+                <i class="fas fa-sign-in-alt me-2"></i>Вход
+            </a>
+        </div>
+        {% else %}
+        <a href="{{ url_for('weather') }}" class="btn btn-primary btn-lg px-5">
+            <i class="fas fa-cloud-sun me-2"></i>Показать погоду
+        </a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

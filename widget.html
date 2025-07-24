@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card text-center animate-on-scroll">
+            <div class="card-header bg-primary text-white">
+                <h5 class="my-2">Погодный виджет</h5>
+            </div>
+            <div class="card-body">
+                {% if weather %}
+                <h3>{{ weather.city }}</h3>
+                <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png" 
+                     alt="Weather Icon" 
+                     class="mb-3">
+                <h2>{{ weather.temp }}°C</h2>
+                <p>{{ weather.description }}</p>
+                
+                <div class="mt-4">
+                    <h5>Код для вставки</h5>
+                    <textarea class="form-control" rows="3" readonly>
+<iframe src="{{ url_for('weather_widget', city=weather.city, _external=True) }}" 
+        width="300" height="200" frameborder="0"></iframe>
+                    </textarea>
+                </div>
+                {% else %}
+                <div class="alert alert-danger">
+                    Не удалось загрузить данные погоды
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
