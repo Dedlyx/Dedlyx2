@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delyks Accounts - Премиум аккаунты будущего</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="stars"></div>
+    <div class="comet"></div>
+    
+    <!-- Header -->
+    <header class="cosmic-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Delyks<span>Accounts</span></h1>
+                <div class="pulse"></div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link">О компании</a>
+                <a href="#features" class="nav-link">Преимущества</a>
+                <a href="#products" class="nav-link">Аккаунты</a>
+                <a href="#referral" class="nav-link">Рефералы</a>
+                <a href="#channel" class="nav-link">Наш канал</a>
+                <a href="#" class="nav-link" id="admin-access">Админ</a>
+                <div class="auth-buttons" id="authButtons">
+                    <button class="btn-login" id="loginBtn">Вход</button>
+                    <button class="btn-register" id="registerBtn">Регистрация</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="glowing-text">БУДУЩЕЕ <span>УЖЕ ЗДЕСЬ</span></h2>
+                    <p class="hero-subtitle">Премиум Delyks Accounts с расширенными возможностями</p>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <span>Мгновенная активация</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🛡️</div>
+                            <span>100% защита</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🚀</div>
+                            <span>Премиум доступ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <div class="card-glow"></div>
+                        <h3>Delyks Pro</h3>
+                        <div class="price">65₽</div>
+                        <button class="btn-buy" id="heroBuyBtn">Приобрести сейчас</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О КОМПАНИИ DELYKS</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Мы создаём будущее цифровых решений</h3>
+                    <p>Delyks Accounts - это инновационная компания, основанная в 2024 году с целью предоставления премиальных цифровых решений для современных пользователей.</p>
+                    
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Довольных клиентов</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Поддержка</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="stat-number">99.8%</div>
+                            <div class="stat-label">Надёжность</div>
+                        </div>
+                    </div>
+
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h4>🎯 Наша миссия</h4>
+                            <p>Сделать премиум цифровые возможности доступными для каждого, предоставляя инновационные решения с максимальной безопасностью и удобством.</p>
+                        </div>
+                        <div class="vision">
+                            <h4>🔭 Наше видение</h4>
+                            <p>Стать лидером в сфере цифровых аккаунтов, устанавливая новые стандарты качества и инноваций в индустрии.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="company-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-content">
+                                <h5>Основание компании</h5>
+                                <p>Запуск платформы Delyks Accounts с тремя тарифами</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2025</div>
+                            <div class="timeline-content">
+                                <h5>Расширение возможностей</h5>
+                                <p>Добавление новых функций и интеграций</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2026</div>
+                            <div class="timeline-content">
+                                <h5>Глобальное присутствие</h5>
+                                <p>Выход на международные рынки</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="values-section">
+                <h3>Наши ценности</h3>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🔒</div>
+                        <h4>Безопасность</h4>
+                        <p>Приоритет номер один - защита данных наших клиентов</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">💡</div>
+                        <h4>Инновации</h4>
+                        <p>Постоянное развитие и внедрение новых технологий</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h4>Поддержка</h4>
+                        <p>Круглосуточная помощь и индивидуальный подход</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🚀</div>
+                        <h4>Развитие</h4>
+                        <p>Непрерывное улучшение наших продуктов и сервисов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">ПРЕИМУЩЕСТВА DELYKS</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Расширенные возможности</h3>
+                    <p>Получите доступ к эксклюзивным функциям и инструментам, недоступным в стандартных версиях</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>Приоритетная поддержка</h3>
+                    <p>Круглосуточная помощь от нашей команды специалистов с мгновенным временем ответа</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>Автоматическое обновление</h3>
+                    <p>Постоянное улучшение и добавление новых возможностей без дополнительной платы</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">04</div>
+                    <h3>Мультиплатформенность</h3>
+                    <p>Доступ ко всем функциям на любом устройстве - ПК, смартфон, планшет</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">05</div>
+                    <h3>Высокая скорость</h3>
+                    <p>Оптимизированные сервера обеспечивают максимальную производительность</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">06</div>
+                    <h3>Гарантия качества</h3>
+                    <p>100% гарантия работоспособности всех функций и мгновенная замена при проблемах</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">ВЫБЕРИТЕ СВОЙ АККАУНТ</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="card-header">
+                        <h3>Delyks Standard</h3>
+                        <div class="price-tag">50₽</div>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Базовый доступ к платформе</li>
+                        <li>✓ Стандартная поддержка</li>
+                        <li>✓ Основные функции</li>
+                        <li>✓ Обновления раз в месяц</li>
+                        <li>✓ До 3 устройств</li>
+                    </ul>
+                    <button class="btn-buy-product" data-product="standard" data-price="50">Купить сейчас</button>
+                </div>
+                
+                <div class="product-card featured">
+                    <div class="popular-badge">ПОПУЛЯРНЫЙ</div>
+                    <div class="card-header">
+                        <h3>Delyks Pro</h3>
+                        <div class="price-tag">65₽</div>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Полный доступ ко всем функциям</li>
+                        <li>✓ Приоритетная поддержка 24/7</li>
+                        <li>✓ Расширенные возможности</li>
+                        <li>✓ Еженедельные обновления</li>
+                        <li>✓ Персональный менеджер</li>
+                        <li>✓ До 10 устройств</li>
+                    </ul>
+                    <button class="btn-buy-product" data-product="pro" data-price="65">Купить сейчас</button>
+                </div>
+                
+                <div class="product-card">
+                    <div class="card-header">
+                        <h3>Delyks Enterprise</h3>
+                        <div class="price-tag">55₽</div>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Максимальная производительность</li>
+                        <li>✓ Расширенная поддержка</li>
+                        <li>✓ Кастомные решения</li>
+                        <li>✓ Мгновенные обновления</li>
+                        <li>✓ API доступ</li>
+                        <li>✓ Неограниченное число устройств</li>
+                    </ul>
+                    <button class="btn-buy-product" data-product="enterprise" data-price="55">Купить сейчас</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Referral Section -->
+    <section id="referral" class="referral">
+        <div class="container">
+            <h2 class="section-title">РЕФЕРАЛЬНАЯ ПРОГРАММА</h2>
+            <div class="referral-content">
+                <div class="referral-info">
+                    <h3>Приводите друзей и получайте бонусы!</h3>
+                    <p>Делитесь своей реферальной ссылкой и получайте 20% от каждой покупки ваших друзей. Накопите достаточно для бесплатного продления или вывода средств!</p>
+                    <div class="referral-stats" id="referralStats">
+                        <div class="stat-item">
+                            <div class="stat-number">0</div>
+                            <div class="stat-label">Приглашено друзей</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">0₽</div>
+                            <div class="stat-label">Заработано бонусов</div>
+                        </div>
+                    </div>
+                    <div class="referral-link-container">
+                        <input type="text" id="referralLink" readonly class="referral-input">
+                        <button class="btn-copy" id="copyReferralBtn">Копировать</button>
+                    </div>
+                </div>
+                <div class="referral-visual">
+                    <div class="bonus-circle">
+                        <div class="bonus-text">20%</div>
+                        <div class="bonus-label">с каждой покупки</div>
+                    </div>
+                    <div class="referral-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <p>Поделитесь ссылкой с друзьями</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <p>Друг регистрируется и покупает аккаунт</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <p>Вы получаете 20% от его покупки</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Channel Section -->
+    <section id="channel" class="channel">
+        <div class="container">
+            <h2 class="section-title">ПРИСОЕДИНЯЙТЕСЬ К НАМ</h2>
+            <div class="channel-content">
+                <div class="channel-info">
+                    <h3>Наш Telegram канал</h3>
+                    <p>Будьте в курсе всех обновлений, акций и новостей. Получайте эксклюзивные предложения и первыми узнавайте о новых функциях!</p>
+                    <div class="channel-features">
+                        <div class="channel-feature">
+                            <span>🎁 Эксклюзивные предложения для подписчиков</span>
+                        </div>
+                        <div class="channel-feature">
+                            <span>📢 Новости и обновления платформы</span>
+                        </div>
+                        <div class="channel-feature">
+                            <span>💬 Поддержка сообщества и обратная связь</span>
+                        </div>
+                        <div class="channel-feature">
+                            <span>⚡ Мгновенные уведомления о акциях</span>
+                        </div>
+                    </div>
+                    <a href="#" id="channelLink" class="btn-channel" target="_blank">
+                        ПЕРЕЙТИ В КАНАЛ
+                    </a>
+                </div>
+                <div class="channel-visual">
+                    <div class="telegram-icon">
+                        <div class="tg-logo">TG</div>
+                        <div class="signal"></div>
+                    </div>
+                    <div class="channel-stats">
+                        <div class="channel-stat">
+                            <div class="stat-value">5000+</div>
+                            <div class="stat-label">подписчиков</div>
+                        </div>
+                        <div class="channel-stat">
+                            <div class="stat-value">99%</div>
+                            <div class="stat-label">положительных отзывов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cosmic-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Delyks<span>Accounts</span></h3>
+                    <p>Премиум аккаунты будущего уже сегодня</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="#" class="social-link">Support</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Компания</h4>
+                        <a href="#about">О нас</a>
+                        <a href="#features">Преимущества</a>
+                        <a href="#channel">Контакты</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Продукты</h4>
+                        <a href="#products">Delyks Standard</a>
+                        <a href="#products">Delyks Pro</a>
+                        <a href="#products">Delyks Enterprise</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Поддержка</h4>
+                        <a href="#">Помощь</a>
+                        <a href="#referral">Реферальная программа</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Delyks Accounts. Все права защищены.</p>
+                <p>Премиум цифровые решения для современного мира</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content cosmic-modal">
+            <span class="close">&times;</span>
+            <h2>ВХОД В СИСТЕМУ</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">ВОЙТИ</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content cosmic-modal">
+            <span class="close">&times;</span>
+            <h2>РЕГИСТРАЦИЯ</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <div class="form-group">
+                    <label>Реферальный код (если есть):</label>
+                    <input type="text" id="referralCodeInput" placeholder="Введите код друга">
+                </div>
+                <button type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Purchase Modal -->
+    <div id="purchaseModal" class="modal">
+        <div class="modal-content cosmic-modal">
+            <span class="close">&times;</span>
+            <h2 id="purchaseTitle">ОФОРМЛЕНИЕ ПОКУПКИ</h2>
+            <div class="purchase-info">
+                <div class="selected-product">
+                    <h3 id="selectedProductName">Delyks Pro</h3>
+                    <div class="product-price">
+                        <span id="originalPrice" class="original-price">65₽</span>
+                        <span id="selectedProductPrice" class="final-price">65₽</span>
+                    </div>
+                </div>
+                
+                <!-- Promo Code Section -->
+                <div class="promo-section">
+                    <div class="form-group">
+                        <label>Промокод:</label>
+                        <div class="promo-input-group">
+                            <input type="text" id="promoCodeInput" placeholder="Введите промокод">
+                            <button type="button" id="applyPromoBtn">Применить</button>
+                        </div>
+                        <div id="promoMessage" class="promo-message"></div>
+                    </div>
+                </div>
+
+                <div class="card-info">
+                    <h3>Переведите <span id="paymentAmount">65₽</span> на карту:</h3>
+                    <div class="card-number">2200 1234 5678 9012</div>
+                    <p>После оплаты прикрепите скриншот перевода</p>
+                </div>
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label>Скриншот перевода:</label>
+                        <input type="file" id="screenshot" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Ваш Telegram username:</label>
+                        <input type="text" id="telegramUsername" placeholder="@username" required>
+                    </div>
+                    <button type="submit">ОТПРАВИТЬ ДАННЫЕ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Access Modal -->
+    <div id="adminAccessModal" class="modal">
+        <div class="modal-content cosmic-modal">
+            <span class="close">&times;</span>
+            <h2>ДОСТУП К АДМИН ПАНЕЛИ</h2>
+            <form id="adminAccessForm">
+                <input type="password" id="adminPasswordInput" placeholder="Введите код доступа" required>
+                <button type="submit">ПОДТВЕРДИТЬ</button>
+            </form>
+            <div class="password-hint">
+                <p>Подсказка: пароль чувствителен к регистру</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Profile Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content cosmic-modal">
+            <span class="close">&times;</span>
+            <h2>ВАШ ПРОФИЛЬ</h2>
+            <div class="profile-info">
+                <div class="profile-stats">
+                    <div class="profile-stat">
+                        <span class="stat-label">Рефералов:</span>
+                        <span class="stat-value" id="profileReferrals">0</span>
+                    </div>
+                    <div class="profile-stat">
+                        <span class="stat-label">Заработано:</span>
+                        <span class="stat-value" id="profileEarnings">0₽</span>
+                    </div>
+                </div>
+                <div class="referral-link-container">
+                    <label>Ваша реферальная ссылка:</label>
+                    <input type="text" id="profileReferralLink" readonly class="referral-input">
+                    <button class="btn-copy" id="copyProfileReferralBtn">Копировать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
